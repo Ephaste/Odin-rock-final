@@ -1,5 +1,5 @@
-console.log('HI U ARE WELL COME TO ROCK, SCISSOR, PAPPER GAME');
-const options = ["rock", "papper", "scissors"];
+console.log('HI U ARE WELL COME TO ROCK, SCISSOR, PAPER GAME');
+const options = ["rock", "paper", "scissors"];
 
  function getComputerChoice(){
     const choice = options[Math.floor(Math.random() * 3)];
@@ -11,7 +11,7 @@ const options = ["rock", "papper", "scissors"];
     }
     else if((playerSelection == "rock" && computerSelection == "scissors") ||
            (playerSelection == "scissors" && computerSelection == "papper") ||
-           (playerSelection == "rock" && computerSelection == "papper")){
+           (playerSelection == "paper" && computerSelection == "rock")){
             return "player";
     }
     else {
@@ -33,7 +33,7 @@ const options = ["rock", "papper", "scissors"];
  function playerChoice(){
      let input = false;
    while (input == false){
-     const userChoice = prompt("choose amomg rock, papper, sccissors and enjoy the game");
+     const userChoice = prompt("choose amomg rock, paper, sccissors and enjoy the game");
    if (userChoice == null){
       continue;
    }
